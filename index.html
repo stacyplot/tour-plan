@@ -20,7 +20,9 @@
         <form action="#" class="search navbar__search">
           <input type="text" class="search__input" placeholder="Search Location" />
           <button class="search__button">
-            <img src="img/search.svg" alt="Search" class="search__icon" />
+            <svg class="icon search__icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
           </button>
         </form>
         <a href="#" class="user navbar__user">
@@ -62,6 +64,59 @@
       </div>
     </nav>
   </header>
+  <main>
+    <nav class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb-list">
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Home</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          </li>
+          <li class="breadcrumb-list__item">
+            Grand Hilton Hotel
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hotel">
+      <div class="container">
+        <div class="hotel-info">
+          <div class="hotel-info__text">
+            <div class="hotel-wrapper">
+              <div class="stars">
+                <svg class="icon stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="icon stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="icon stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="icon stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="icon stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+              </div>
+              <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
+              <span class="offer hotel-info__offer">Flash Offer</span>
+            </div>
+            <p class="hotel-description hotel-info__description">
+              Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
+            </p>
+          </div>
+          <div class="rating hotel-info__rating">
+            <span class="rating__text">User Rattings</span>
+            <span class="rating__counter">4.5/<span>5</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

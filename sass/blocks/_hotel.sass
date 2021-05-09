@@ -1,0 +1,59 @@
+.stars
+  flex-basis: 100%
+  &__icon
+    width: 8px
+    height: 8px
+    svg
+      fill: #F2994A
+    &:not(:last-child)
+      margin-right: 2px
+
+.hotel
+  padding: 23px 0 70px 0
+  &-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__offer
+      margin: 4px 0 0 14px
+    &__name
+      margin: 4px 0 0 0
+    &__description
+      padding: 0
+      margin: 5px 0 0 0
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  &-name
+    font-size: 24px
+    line-height: 30px
+    font-weight: 700
+
+  &-description
+    font-size: 12px
+    line-height: 15px
+.offer
+  font-size: 10px
+  padding: 4px 9px
+  background-color: $primary-color
+  border-radius: 3px
+  color: $light-color
+.rating
+  padding: 8px 7px
+  border-radius: 4px
+  background-color: $primary-color
+  color: $light-color
+  &__text
+    display: block
+    text-align: center
+    margin-bottom: 2px
+    font-size: 8px
+    line-height: 10px
+  &__counter
+    display: block
+    text-align: center
+    font-size: 14px
+    font-weight: 700
+    span
+      font-size: 10px
