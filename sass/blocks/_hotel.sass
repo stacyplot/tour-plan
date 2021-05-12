@@ -33,6 +33,13 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 
 .offer
   font-size: 10px
@@ -99,3 +106,71 @@
       background-size: 10px
       background-position: center
       transform: scale(-1, 1)
+.booking
+  border-radius: 8px
+  background-color: $dark-color
+  color: $light-color
+  font-family: 'Nunito', sans-serif
+  padding: 28px
+  width: 350px
+  min-height: 210px
+  &__info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 9px
+  &__start
+    display: block
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    display: block
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    display: block
+    font-size: 12px
+    line-height: 16px
+  &__text
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      margin-bottom: 8px
+  &__icon
+    width: 14px
+    height: 14px
+    margin-right: 9px
+  &__description
+    font-size: 12px
+    line-height: 16px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 9px 0 17px 0
+  &__heading
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__link
+  &__number
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__button
+    background-color: $primary-color
+    border: none
+    outline: none
+    color: $light-color
+    border-radius: 4px
+    padding: 13px 82px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    cursor: pointer
+.map
+  width: 347px
+  height: 213px
+  border-radius: 10px
+  background-color: #000
