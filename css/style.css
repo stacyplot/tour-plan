@@ -805,6 +805,10 @@ template {
   overflow: hidden;
 }
 
+.map iframe {
+  width: 100%;
+}
+
 .newsletter {
   background: url(../img/newsletter-bg.jpeg);
   background-position: center;
@@ -1039,7 +1043,7 @@ template {
   .slider {
     width: 590px;
   }
-  .swiper-slide__img {
+  .hotel-slider__img {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1083,15 +1087,18 @@ template {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .hotel-slider {
+    width: 100%;
+  }
   .booking {
     width: 340px;
-  }
-  .slider {
-    width: 100%;
   }
   .map {
     width: 340px;
     overflow: hidden;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1152,11 +1159,7 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .stars {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-  }
-  .slider {
+  .hotel-slider {
     height: 350px;
   }
   .hotel-right {
@@ -1167,6 +1170,10 @@ template {
   }
   .hotel__slider {
     margin-bottom: 0;
+  }
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .booking {
     width: 100%;
@@ -1197,13 +1204,41 @@ template {
   .newsletter__subscribe {
     margin-top: 37px;
   }
+  .reviews {
+    padding: 40px 0 60px 0;
+  }
+  .reviews__title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::after, .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button_prev {
+    left: 50%;
+    margin-left: -65px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider__button_next {
+    right: 50%;
+    margin-right: -65px;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
   }
-  .slider {
+  .hotel-slider {
     height: 250px;
   }
   .newsletter {
@@ -1211,6 +1246,16 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews {
+    padding: 40px 0 50px 0;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 245px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
