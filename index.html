@@ -118,34 +118,34 @@
           </div>
         </div>
         <div class="hotel-grid">
-          <div class="slider hotel__slider">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img class="swiper-slide__img" src="img/hotel-slide1.jpg" alt="Slide">
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiper-slide__img" src="img/hotel-slide2.jpg" alt="Slide">
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiper-slide__img" src="img/hotel-slide3.jpg" alt="Slide">
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiper-slide__img" src="img/hotel-slide4.jpg" alt="Slide">
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiper-slide__img" src="img/hotel-slide5.jpg" alt="Slide">
-                </div>
-              </div>
 
-              <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button_prev"></button>
-              <button class="slider-button slider-button_next"></button>
+          <!-- Slider main container -->
+          <div class="swiper-container hotel__slider hotel-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide__img" src="img/hotel-slide1.jpg" alt="Slide">
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide__img" src="img/hotel-slide2.jpg" alt="Slide">
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide__img" src="img/hotel-slide3.jpg" alt="Slide">
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide__img" src="img/hotel-slide4.jpg" alt="Slide">
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide__img" src="img/hotel-slide5.jpg" alt="Slide">
+              </div>
             </div>
+
+            <!-- If we need navigation buttons -->
+            <button class="hotel-slider__button hotel-slider__button_prev"></button>
+            <button class="hotel-slider__button hotel-slider__button_next"></button>
           </div>
+
           <div class="hotel-right">
             <div class="booking">
               <div class="booking__info">
@@ -199,6 +199,126 @@
           <input type="text" class="subscribe__input" placeholder="Your email address" />
           <button class="subscribe__button">Send</button>
         </form>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">What people thinks about us</h2>
+        <!-- Slider main container -->
+        <div class="swiper-container reviews-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img src="img/reviews-avatar1.jpeg" alt="Reviews Avatar" class="reviews-slider__avatar">
+                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very
+                  well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities
+                  articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of
+                  the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the
+                  popular places but self location in a narrow street is not good. Overall it was a good experience and
+                  could recommend.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img src="img/reviews-avatar2.jpeg" alt="Reviews Avatar" class="reviews-slider__avatar">
+                  <h3 class="reviews-slider__username">Brad Pitt</h3>
+                  <span class="reviews-slider__date">Stayed 2 Feb, 2018</span>
+                  <div class="reviews-slider__rating">
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, illum minima voluptas quidem vero
+                  debitis id beatae eius dignissimos impedit quas eaque, incidunt sequi! Sapiente aliquid delectus
+                  deleniti quidem sit?
+                  Facere saepe laborum numquam quas optio quibusdam dignissimos corporis deserunt quos, nam quis maxime
+                  sunt a ipsam veritatis magnam recusandae expedita alias odio quisquam eius quaerat dolores! Deleniti,
+                  ut architecto.
+                  Dolorum delectus possimus maiores vel? Ipsa deserunt repellat esse labore exercitationem ab laborum
+                  sed voluptate doloribus ex quibusdam, earum tempora impedit, recusandae nesciunt sint sapiente tempore
+                  nam! Animi, deserunt deleniti.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img src="img/reviews-avatar3.jpeg" alt="Reviews Avatar" class="reviews-slider__avatar">
+                  <h3 class="reviews-slider__username">Lady Gaga</h3>
+                  <span class="reviews-slider__date">Stayed 5 March, 2015</span>
+                  <div class="reviews-slider__rating">
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon stars__icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis ab minus quasi ipsam
+                  sapiente pariatur alias, exercitationem quia nulla amet iure maiores at. Id veniam numquam
+                  exercitationem maiores placeat.Sunt, qui? Rerum, laudantium consequuntur. Cum molestiae voluptate
+                  deserunt omnis, est hic error accusantium sapiente esse inventore similique rerum odio officia quam
+                  quis at ex eaque! Saepe unde nihil atque?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="reviews-slider__button reviews-slider__button_prev"></div>
+          <div class="reviews-slider__button reviews-slider__button_next"></div>
+        </div>
       </div>
     </section>
   </main>

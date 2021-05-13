@@ -1,0 +1,91 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    font-size: 36px
+    line-height: 45px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 70px
+  &-slider
+    &__item
+      max-width: 730px
+      background-color: $light-color
+      border-radius: 8px
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 45px auto 0 auto
+      padding: 0 62px 30px 62px
+      position: relative
+      &::before
+        content: ''
+        width: 70px
+        height: 47px
+        position: absolute
+        background-image: url(../img/quote-left.svg)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        top: 13px
+        left: 64px
+      &::after
+        content: ''
+        width: 70px
+        height: 47px
+        position: absolute
+        background-image: url(../img/quote-right.svg)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        bottom: 114px
+        right: 60px
+    &__button
+      background-position: center
+      background-repeat: no-repeat
+      background-size: 10px
+      width: 30px
+      height: 30px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      cursor: pointer
+      z-index: 99
+      &_prev
+        background-image: url(../img/arrow-grey-left.svg)
+        left: 0
+      &_next
+        background-image: url(../img/arrow-grey-right.svg)
+        right: 0
+    &__profile
+      margin-bottom: 30px
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+    &__username
+      font-size: 12px
+      line-height: 15px
+      font-weight: 700
+      color: $primary-color
+      margin: 9px 0 10px 0
+    &__date
+      display: block
+      font-size: 10px
+      line-height: 13px
+      margin-bottom: 4px
+    &__rating
+      display: flex
+      align-items: center
+      justify-content: center
+    &__text
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      max-width: 537px
+      margin: 0 auto
