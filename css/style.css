@@ -1020,6 +1020,19 @@ template {
   margin-bottom: 4px;
 }
 
+.reviews-slider__icon {
+  width: 8px;
+  height: 8px;
+}
+
+.reviews-slider__icon svg {
+  fill: #F2994A;
+}
+
+.reviews-slider__icon:not(:last-child) {
+  margin-right: 2px;
+}
+
 .reviews-slider__rating {
   display: -webkit-box;
   display: -ms-flexbox;
