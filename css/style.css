@@ -1842,6 +1842,11 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog {
+    max-width: 80%;
+    width: 700px;
+    padding: 40px;
+  }
 }
 
 @media (max-width: 576px) {
