@@ -61,4 +61,27 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay_visible');
     modalDialog.removeClass('modal__dialog_visible');
   }
+
+  // Обработка формы
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: 'invalid',
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Your name should be longer than 2 letters"
+        },
+        email: {
+          required: "Please put your email",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Please put your phone number",
+        }
+      },
+    });
+  })
+
+  // Маска для номера телефона
+  $('.modal__input-phone').mask('+7 (000) 000-00-00');
 });
